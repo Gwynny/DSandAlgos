@@ -23,11 +23,13 @@ class HandcraftedArray:
         for i in list(range(index, self.length))[::-1]:
             self.data[i + 1] = self.data[i]
         self.data[index] = new_element
+        self.length += 1
 
     def delete(self, index):
         for i in range(index, self.length):
             self.data[i] = self.data[i + 1]
         del self.data[index]
+        self.length -= 1
 
 
 myList = HandcraftedArray()
