@@ -31,15 +31,3 @@ class HandcraftedArray:
         del self.data[self.length-1]
         self.length -= 1
 
-
-myList = HandcraftedArray()
-
-myList.append(0)
-myList.append(2)
-myList.append(4)
-myList.append(6)
-print(myList)
-myList.insert(2, 5)
-print(myList)
-myList.delete(3)
-print(myList)
